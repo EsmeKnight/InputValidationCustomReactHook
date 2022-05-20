@@ -35,7 +35,7 @@ const BasicForm = (props) => {
 
   const submissionHandler = (event) => {
     event.preventDefault();
-    if (!firstNameIsValid || !lastNameIsValid || !emailIsValid) {
+    if (!formIsValid) {
       return;
     }
     resetFirstName();
